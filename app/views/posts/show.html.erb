@@ -6,7 +6,7 @@
   </header>
 
 <div id="content">
-<p style="white-space: pre-wrap;"><%= @post.content %></p>
+<p><%= markdown(@post.content) %></p>
 </div>
 
 <hr>
