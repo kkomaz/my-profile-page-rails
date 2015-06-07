@@ -7,6 +7,10 @@
 
 <div id="content">
   <p><%= markdown(@project.description) %></p>
+  <div class="share_box">
+    <%= link_to "Edit", edit_project_path(@project) %>
+    <%= link_to "Destroy", project_path(@project), method: :delete, data: {confirm: "Are you sure you want to delete this post?"} %>
+  </div>
   <div class="button_wrapper">
     <a href="<%= @project.link %>" class="project_button" target="_blank">Visit <%= @project.title %></a>
   </div>
