@@ -11,6 +11,7 @@ gem 'pygments.rb', '~> 0.6.0'
 gem 'redcarpet', '~> 3.2.2'
 gem 'friendly_id', '~> 5.1.0'
 gem 'kaminari', '~> 0.16.3'
+gem 'devise', '~> 3.4.1'
 
 group :development, :test do
   gem 'byebug'

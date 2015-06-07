@@ -24,11 +24,6 @@
   <div class="col-3 homepage_content">
     <h2>My Projects</h2>
     <hr>
-    <h3><a href="#"> Co-Code</a></h3>
-    <p class="date">Friday June 7th</p>
-    <h3> <a href="#">CityShowDown</a></h3>
-    <p class="date">Friday June 1st</p>
-    <h3> <a href="#">C9 Live</a></h3>
-    <p class="date">Friday May 31st</p>
+    <%= render partial: "welcome/projects", collection: @projects, :as => "project" %>
   </div>
 </div>
