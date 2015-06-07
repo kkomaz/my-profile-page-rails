@@ -14,6 +14,7 @@ gem 'kaminari', '~> 0.16.3'
 gem 'devise', '~> 3.4.1'
 gem 'mail_form', '~> 1.5.1'
 gem 'figaro'
+gem 'paperclip'
 
 group :development, :test do
   gem 'byebug'
