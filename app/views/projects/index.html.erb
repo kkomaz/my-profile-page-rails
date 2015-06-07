@@ -1,5 +1,10 @@
 <h1 id="page_title"> My Projects</h1>
 <div id="post_wrapper" class="skinny_wrapper">
+  <% if user_signed_in? %>
+  <div id="new_links">
+    <%= link_to "Create New Post", new_post_path %>
+  </div>  
+  <% end %>
   <% @projects.each do |project| %>
   <div class="post">    
     <p class="date"><%= project.created_at.strftime('%A, %B, %d') %></p>

@@ -304,7 +304,7 @@ DEPENDENCIES
   jquery-rails
   kaminari (~> 0.16.3)
   mail_form (~> 1.5.1)
-  paperclip
+  paperclip (~> 4.2)
   pg
   pry
   pygments.rb (~> 0.6.0)
