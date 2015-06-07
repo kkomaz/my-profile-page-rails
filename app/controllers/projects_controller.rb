@@ -20,6 +20,11 @@ class ProjectsController < ApplicationController
   def show
   end
 
+  def destroy
+    @project.destroy
+    redirect_to projects_path
+  end
+
   def project_params
     params.require(:project).permit(:title, :description, :link)
   end
