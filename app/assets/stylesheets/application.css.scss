@@ -92,6 +92,12 @@ hr {
 #main_navigation {
   padding: 2.5em 5%;
   border-bottom: 1px solid $border;
+  img {
+    height: 3.0em;
+    width: 3em;
+    margin: 0.15em 1em 0 0;
+    float: left;
+  }
   .name {
     font-weight: 700;
     font-size: .8em;
