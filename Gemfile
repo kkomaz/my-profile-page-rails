@@ -15,6 +15,7 @@ gem 'devise', '~> 3.4.1'
 gem 'mail_form', '~> 1.5.1'
 gem 'figaro'
 gem "paperclip", "~> 4.2"
+gem 'aws-sdk', '< 2.0'
 
 group :development, :test do
   gem 'byebug'
