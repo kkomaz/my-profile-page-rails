@@ -9,7 +9,9 @@
   <div class="post">    
     <p class="date"><%= project.created_at.strftime('%A, %B, %d') %></p>
     <h2><a href="#"><%= link_to project.title, project %></a></h2>
+    <%= image_tag project.image.url(:medium) %>
     <% if user_signed_in? %>
+      <br>
       <%= link_to "Edit", edit_project_path(project) %>
       <%= link_to "Destroy", project_path(project), method: :delete, data: {confirm: "Are you sure you want to delete this post?"} %>
     <% end %>
