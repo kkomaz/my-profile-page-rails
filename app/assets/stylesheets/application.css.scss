@@ -38,7 +38,13 @@ body {
   }
 }
 
-.wrapper {
+.wrapper_1 {
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 1px solid $border;
+}
+
+.wrapper_2 {
   width: 90%;
   margin: 0 auto;
 }

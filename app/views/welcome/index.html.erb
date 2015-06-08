@@ -7,8 +7,8 @@
   </div>
 </div>
 
-<div class="wrapper wrapper_padding clearfix">
-  <div class="col-1 about homepage_content">
+<div class="wrapper_1 wrapper_padding clearfix">
+  <div class="col-6 about homepage_content">
     <h2>About Me</h2>
     <hr>
     <p>
@@ -23,6 +23,15 @@
     You can follow me on github or linkedin on the links in the bottom right corner!
     </p>
   </div>
+  <div class="col-6 about homepage_content">
+    <div class="user-img">
+      <%= image_tag("about_me_profile.jpg", class: "optional_class") %>
+    </div>
+  </div>
+  
+</div>
+
+<div class="wrapper_2 wrapper_padding clearfix">
   <div class="col-2 homepage_content">
     <h2>My Blog Posts</h2>
     <hr>
@@ -33,5 +42,11 @@
     <h2>My Projects</h2>
     <hr>
     <%= render partial: "welcome/projects", collection: @projects, :as => "project" %>
+  </div>
+
+  <div class="col-3 homepage_content">
+    <h2>My Screencasts</h2>
+    <hr>
+    <p>Coming Soon...</p>
   </div>
 </div>
