@@ -14,6 +14,30 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+#banner{
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.homepage_banner{
+  background-image: image-url("banner3.jpg");
+  padding: 6rem 0 15rem 0;
+  text-align: center;
+  h1{
+    color: $white;
+  }
+  p{
+    color: $white;
+  }
+  .front-opacity{
+  opacity: 0.8;
+  margin: 6em auto;
+  background-color: #2e2e2e;
+  padding: 1em 0 1em 0;
+  }
+}
+
 .wrapper {
   width: 90%;
   margin: 0 auto;
@@ -90,7 +114,7 @@ hr {
 }
 
 #main_navigation {
-  padding: 2.5em 5%;
+  padding: 1.7em 5%;
   border-bottom: 1px solid $border;
   img {
     height: 3.0em;
