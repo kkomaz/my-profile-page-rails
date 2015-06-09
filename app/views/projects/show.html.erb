@@ -7,7 +7,7 @@
   </header>
 
 <div id="content">
-  <p><%= markdown(@project.description) %></p>
+  <%= markdown(@project.description) %>
   <div class="share_box">
   <% if user_signed_in? %>
     <%= link_to "Edit", edit_project_path(@project) %>

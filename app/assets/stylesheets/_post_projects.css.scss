@@ -158,6 +158,17 @@
     }
 }
 
+#content {
+  p {
+      img {
+        height: 200px;
+        width: 200px;
+        margin-left: calc(50% - 100px)
+          }
+  }
+  
+}
+
 .last {
   display:none;
 }
