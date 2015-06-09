@@ -57,3 +57,12 @@
   width: 300px;
   }
 }
+
+p.caption{
+    position: absolute;
+    bottom:0;
+    margin-left: 88%;
+    a {
+      color: $light;
+    }
+}
