@@ -53,6 +53,6 @@
   <div class="col-3 homepage_content">
     <h2>My Screencasts</h2>
     <hr>
-    <p>Coming Soon...</p>
+    <%= render partial: "welcome/videos", collection: @videos, :as => "video" %>
   </div>
 </div>
