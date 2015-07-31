@@ -2,6 +2,7 @@
   <header>
     <p class="date"><%= @video.created_at.strftime('%A, %B, %d') %></p>
     <h1><%= @video.title %></h1>
+        <%= image_tag @video.image.url(:large) %>
   <hr>
   </header>
 

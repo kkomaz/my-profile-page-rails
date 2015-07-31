@@ -9,6 +9,7 @@
   <div class="post">    
     <p class="date"><%= video.created_at.strftime('%A, %B, %d') %></p>
     <h2><%= link_to video.title, video %></h2>
+    <%= image_tag video.image.url(:medium) %>
       <% if user_signed_in? %>
         <div id="admin_links">
           <%= link_to "Edit", edit_video_path(video) %>
