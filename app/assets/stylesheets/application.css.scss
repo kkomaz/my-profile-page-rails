@@ -226,6 +226,10 @@ input[type="submit"], .button {
   border-bottom: 1px solid $border;
 }
 
+#style_image{
+  text-align: center;
+}
+
 @import 'welcome';
 @import 'post_projects';
 @import 'pygments';

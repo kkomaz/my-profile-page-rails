@@ -1,6 +1,6 @@
 class Video < ActiveRecord::Base
-  has_attached_file :image, :styles => {:large => "600x600>", :medium => "300x300>", :thumb => "100x100>" }
-  validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
+  has_attached_file :image
+  validates_attachment_content_type :image, :content_type => ["video/mp4", "image/jpg", "image/jpeg"] 
   extend FriendlyId
   friendly_id :title, use: :slugged
 

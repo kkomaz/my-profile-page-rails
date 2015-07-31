@@ -2,7 +2,7 @@
   <header>
     <p class="date"><%= @video.created_at.strftime('%A, %B, %d') %></p>
     <h1><%= @video.title %></h1>
-        <%= image_tag @video.image.url(:large) %>
+        <%= video_tag @video.image.url, :id => "style_image" %>
   <hr>
   </header>
 
@@ -28,3 +28,15 @@
 <hr>
 
 <%= render 'disqus' %>
+
+<script>
+  var video = document.getElementById("style_image");
+
+  $('#style_image').hover(function toggleControls() {
+    if (video.hasAttribute("controls")) {
+        video.removeAttribute("controls")
+    } else {
+        video.setAttribute("controls", "controls")
+    }
+  })
+</script>
