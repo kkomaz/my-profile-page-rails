@@ -1,0 +1,25 @@
+<%= form_for @video do |f| %>
+  <% if @video.errors.any? %>
+    <h2><%= pluralize(@video.errors.count, "error")%> prevented this video from saving: </h2>
+    <ul>
+      <% @video.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  <% end %>
+
+  <%= f.label :title, "Title" %><br>
+  <%= f.text_field :title %>
+
+  <br>
+  <br>
+
+  <%= f.label :notes, "Write your notes here" %><br>
+  <%= f.text_area :notes %>
+
+  <br>
+  <br>
+
+  <%= f.submit "Submit your notes" %>
+
+<% end %>
