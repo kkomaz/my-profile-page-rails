@@ -53,6 +53,10 @@
   <div class="col-3 homepage_content">
     <h2>My Screencasts</h2>
     <hr>
-    <%= render partial: "welcome/videos", collection: @videos, :as => "video" %>
+    <% if !@videos.empty? %>
+      <%= render partial: "welcome/videos", collection: @videos, :as => "video" %>
+    <% else %>
+      Coming soon...
+    <% end %>
   </div>
 </div>

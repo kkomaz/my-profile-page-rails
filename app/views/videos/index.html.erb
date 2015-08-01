@@ -5,6 +5,7 @@
     <%= link_to "Create New Video", new_video_path %>
   </div>
   <% end %>
+  <% if !@videos.empty? %>
   <% @videos.each do |video| %>
   <div class="post">    
     <p class="date"><%= video.created_at.strftime('%A, %B, %d') %></p>
@@ -18,4 +19,9 @@
     <hr>
     <% end %>
   </div>
+  <% else %>
+    Coming soon...
+  <% end %>
 </div>
+
+     
