@@ -1,0 +1,17 @@
+$column-check: <%= Rails.env.production? ? 'hide' : 'show-columns' %>;
+
+$susy: (
+  columns: 12
+);
+
+$susy-phone: (
+  columns: 4
+);
+
+$susy-debug: (
+  debug: (
+    image: $column-check,
+    color: rgba(153,255,153, 0.2),
+    output: background
+  )
+);

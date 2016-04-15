@@ -1,0 +1,15 @@
+// Media query mixins.
+// Desktop mixin.
+
+@mixin desktop {
+  @include susy-breakpoint($desktop, $susy) {
+    @content;
+  }
+}
+
+// Phone mixin.
+@mixin phone {
+  @include susy-breakpoint($phone, $susy-phone) {
+    @content;
+  }
+}

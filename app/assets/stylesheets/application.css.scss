@@ -1,17 +1,23 @@
+// Globals
+@import 'compass';
+@import 'susy';
+@import 'breakpoint';
+@import 'normalize';
+@import 'pygments';
+
 // Variables
 @import './variables/colors';
+@import './variables/breakpoints';
+@import './variables/grid-settings';
 
 //Mixins
 @import './mixins/position';
 @import './mixins/size';
-
-// Globals
-@import 'normalize';
-@import 'pygments';
+@import './mixins/media-queries';
 
 // Layouts
-@import 'welcome';
-@import 'post_projects';
+@import './layouts/welcome';
+@import './layouts/post_projects';
 
 * {
   box-sizing: border-box;

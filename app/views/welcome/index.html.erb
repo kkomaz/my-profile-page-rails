@@ -1,61 +1,63 @@
-<div id="banner" class="homepage_banner" style="visibility: visible">
-  <div class="wrapper">
-    <div class="front-opacity panel">
-      <h1>Hi, I'm Alexander Lee</h1>
-      <p>I am a Web Developer // Software Engineer </p>
+<div class="welcome-page">
+  <div id="banner" class="homepage_banner" style="visibility: visible">
+    <div class="wrapper">
+      <div class="front-opacity panel">
+        <h1>Hi, I'm Alexander Lee</h1>
+        <p>I am a Web Developer // Software Engineer </p>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="wrapper_1 wrapper_padding clearfix">
-  <div class="col-6 about homepage_content">
-    <h2>About Me</h2>
-    <hr>
-    <p>
-      I am a full-stack Web Developer // Software Engineer living in New York.            
-    </p>
-    <p>
-      I build websites and web applications using Ruby on Rails and various different frameworks such as Node.js.
-    </p>
-    <p>
-    This website is dedicated to showing my readers what I have been working on as well as some cool blog posts that I find interesting and helpful.
-    </p>
-    <p>
-    I hope my posts will get you excited about being developer!  
-    </p>
-    <p>
-    You can follow me on github or linkedin on the links in the bottom right corner!
-    </p>
-  </div>
-  <div class="col-6 about homepage_content">
-    <div class="user-img">
-      <%= image_tag("profile2.png", class: "optional_class") %>
+  <div class="wrapper_1 wrapper_padding clearfix">
+    <div class="col-6 about homepage_content">
+      <h2>About Me</h2>
+      <hr>
+      <p>
+        I am a full-stack Web Developer // Software Engineer living in New York.            
+      </p>
+      <p>
+        I build websites and web applications using Ruby on Rails and various different frameworks such as Node.js.
+      </p>
+      <p>
+      This website is dedicated to showing my readers what I have been working on as well as some cool blog posts that I find interesting and helpful.
+      </p>
+      <p>
+      I hope my posts will get you excited about being developer!
+      </p>
+      <p>
+      You can follow me on github or linkedin on the links in the bottom right corner!
+      </p>
     </div>
-  </div>
-  
-</div>
+    <div class="col-6 about homepage_content">
+      <div class="user-img">
+        <%= image_tag("profile2.png", class: "optional_class") %>
+      </div>
+    </div>
 
-<div class="wrapper_2 wrapper_padding clearfix">
-  <div class="col-2 homepage_content">
-    <h2>My Blog Posts</h2>
-    <hr>
-    <%= render partial: "welcome/post", collection: @posts, :as => "post" %>
-    <%= link_to "My previous blog site", "https://kkomaz.wordpress.com/category/blogs/", :target => "_blank" %>
-  </div>
-        
-  <div class="col-3 homepage_content">
-    <h2>My Projects</h2>
-    <hr>
-    <%= render partial: "welcome/projects", collection: @projects, :as => "project" %>
   </div>
 
-  <div class="col-3 homepage_content">
-    <h2>My Screencasts</h2>
-    <hr>
-    <% if !@videos.empty? %>
-      <%= render partial: "welcome/videos", collection: @videos, :as => "video" %>
-    <% else %>
-      Coming soon...
-    <% end %>
+  <div class="wrapper_2 wrapper_padding clearfix">
+    <div class="col-2 homepage_content">
+      <h2>My Blog Posts</h2>
+      <hr>
+      <%= render partial: "welcome/post", collection: @posts, :as => "post" %>
+      <%= link_to "My previous blog site", "https://kkomaz.wordpress.com/category/blogs/", :target => "_blank" %>
+    </div>
+
+    <div class="col-3 homepage_content">
+      <h2>My Projects</h2>
+      <hr>
+      <%= render partial: "welcome/projects", collection: @projects, :as => "project" %>
+    </div>
+
+    <div class="col-3 homepage_content">
+      <h2>My Screencasts</h2>
+      <hr>
+      <% if !@videos.empty? %>
+        <%= render partial: "welcome/videos", collection: @videos, :as => "video" %>
+      <% else %>
+        Coming soon...
+      <% end %>
+    </div>
   </div>
 </div>

@@ -1,3 +1,13 @@
+GIT
+  remote: git://github.com/Compass/compass-rails.git
+  revision: 62e37c73e8c8470b094e8d7f2cbb98356b591e57
+  branch: master
+  specs:
+    compass-rails (3.0.2)
+      compass (~> 1.0.0)
+      sass-rails (< 5.1)
+      sprockets (< 4.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -53,6 +63,9 @@ GEM
       debug_inspector (>= 0.0.1)
     bootstrap-sass (3.1.1.1)
       sass (~> 3.2)
+    breakpoint (2.7.0)
+      sass (~> 3.3)
+      sassy-maps (< 1.0.0)
     builder (3.2.2)
     byebug (5.0.0)
       columnize (= 0.9.0)
@@ -66,6 +79,7 @@ GEM
       timers (~> 4.0.0)
     childprocess (0.5.6)
       ffi (~> 1.0, >= 1.0.11)
+    chunky_png (1.3.5)
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.7)
@@ -79,6 +93,18 @@ GEM
       execjs
     coffee-script-source (1.9.1.1)
     columnize (0.9.0)
+    compass (1.0.3)
+      chunky_png (~> 1.2)
+      compass-core (~> 1.0.2)
+      compass-import-once (~> 1.0.5)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9)
+      sass (>= 3.3.13, < 3.5)
+    compass-core (1.0.3)
+      multi_json (~> 1.0)
+      sass (>= 3.3.0, < 3.5)
+    compass-import-once (1.0.5)
+      sass (>= 3.2, < 3.5)
     daemons (1.2.2)
     database_cleaner (1.4.1)
     debug_inspector (0.0.2)
@@ -239,12 +265,16 @@ GEM
     rspec-support (3.2.2)
     rubyzip (1.1.7)
     sass (3.4.14)
+    sass-globbing (1.1.5)
+      sass (>= 3.1)
     sass-rails (5.0.3)
       railties (>= 4.0.0, < 5.0)
       sass (~> 3.1)
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (~> 1.1)
+    sassy-maps (0.4.0)
+      sass (~> 3.3)
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
@@ -267,6 +297,8 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
+    susy (2.2.12)
+      sass (>= 3.3.0, < 3.5)
     thin (1.6.3)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0)
@@ -301,9 +333,11 @@ DEPENDENCIES
   better_errors
   binding_of_caller
   bootstrap-sass (~> 3.1.1)
+  breakpoint
   byebug
   capybara
   coffee-rails (~> 4.1.0)
+  compass-rails!
   database_cleaner
   devise (~> 3.4.1)
   factory_girl_rails
@@ -324,11 +358,14 @@ DEPENDENCIES
   rails_12factor
   redcarpet (~> 3.2.2)
   rspec-rails
+  sass
+  sass-globbing
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   selenium-webdriver
   simplecov
   spring
+  susy
   thin
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
