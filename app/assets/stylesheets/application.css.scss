@@ -1,10 +1,17 @@
-@import 'normalize';
+// Variables
+@import './variables/colors';
 
-$dark: #424652;
-$light: #9a9da4;
-$highlight: #8bc6db;
-$border: #E9E9E9;
-$white: #FFFFFF;
+//Mixins
+@import './mixins/position';
+@import './mixins/size';
+
+// Globals
+@import 'normalize';
+@import 'pygments';
+
+// Layouts
+@import 'welcome';
+@import 'post_projects';
 
 * {
   box-sizing: border-box;
@@ -230,7 +237,3 @@ input[type="submit"], .button {
 #style_image{
   text-align: center;
 }
-
-@import 'welcome';
-@import 'post_projects';
-@import 'pygments';

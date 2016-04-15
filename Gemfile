@@ -18,6 +18,12 @@ gem "paperclip", "~> 4.2"
 gem 'aws-sdk', '< 2.0'
 gem "paperclip-av-transcoder"
 
+gem "compass-rails", github: "Compass/compass-rails", branch: "master"
+gem 'sass-globbing'
+gem 'sass'
+gem 'susy'
+gem 'breakpoint'
+
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
