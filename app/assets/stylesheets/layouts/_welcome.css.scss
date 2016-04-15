@@ -33,6 +33,72 @@
       color: $white;
     }
   }
+
+  .user-information {
+    @include span(full);
+
+    border-bottom: 1px solid #E9E9E9;
+    padding-bottom: 4em;
+
+    &__header {
+      @include phone {
+        @include span(full);
+      }
+
+      @include push(1 of 12);
+      @include span(11 of 12);
+    }
+
+    &__label {
+      @include phone {
+        text-align: center;
+        font-size: 1.5em;
+      }
+
+      margin: 1em 0 0;
+      font-size: 1.3em
+    }
+
+    hr {
+      @include phone {
+        margin: 15px auto;
+      }
+    }
+
+    &__content {
+      @include phone {
+        @include span(full);
+
+        text-align: center;
+      }
+
+      @include push(1 of 12);
+      @include span(5 of 12);
+
+
+    }
+
+    &__image {
+      @include phone {
+        @include span(full);
+
+        text-align: center;
+        margin-bottom: 2em;
+      }
+
+      @include span(5 of 12 last);
+
+      .user-img {
+        img {
+          border-radius: 100%;
+          border: 8px solid $highlight;
+          height: 330px;
+          width: 300px;
+        }
+      }
+    }
+
+  }
 }
 
 .col-6, .col-2, .col-3{
@@ -82,16 +148,6 @@
       font-weight: 700;
       text-decoration: none;
     }
-}
-
-.user-img {
-  margin: 3em 0 0 30%;
-  img{
-  border-radius: 100%;
-  border: 8px solid $highlight;
-  height: 350px;
-  width: 300px;
-  }
 }
 
 p.caption{
