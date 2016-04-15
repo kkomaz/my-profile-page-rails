@@ -1,18 +1,18 @@
-<div id="post_show_content" class="skinny_wrapper wrapper_padding">
+<div class="post-page">
   <header>
-    <p class="date"><%= @post.created_at.strftime('%A, %B, %d') %></p>
+    <p class="post-page__date"><%= @post.created_at.strftime('%A, %B, %d') %></p>
     <h1><%= @post.title %></h1>
     <%= image_tag @post.image.url(:large) %>
   <hr>
   </header>
 
-<div id="content">
+<div class="post-page__content">
 <p><%= markdown(@post.content) %></p>
 </div>
 
 <hr>
 
-<div class="share_box">
+<div class="post-page__share_box">
   <p>Share <%= @post.title %></p>
     <% if user_signed_in? %>
       <div id="admin_links">
