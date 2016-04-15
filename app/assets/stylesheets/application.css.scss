@@ -16,6 +16,7 @@
 @import './mixins/media-queries';
 
 // Layouts
+@import './layouts/header';
 @import './layouts/welcome';
 @import './layouts/post_projects';
 
@@ -131,38 +132,6 @@ hr {
     border: 0;
     border-top: 2px solid $highlight;
     margin: 2rem 0;
-}
-
-#main_navigation {
-  padding: 1.7em 5%;
-  border-bottom: 1px solid $border;
-  img {
-    height: 3.0em;
-    width: 3em;
-    margin: 0.15em 1em 0 0;
-    float: left;
-  }
-  .name {
-    font-weight: 700;
-    font-size: .8em;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    border: 2px solid $border;
-    padding: 1rem;
-    text-decoration: none;
-    color: $dark;
-    float: left;
-  }
-  nav{
-    float: right;
-    padding-top: 1.5rem;
-    a {
-      color: $dark;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-size: 1rem;
-    }
-  }
 }
 
 #page_title {
