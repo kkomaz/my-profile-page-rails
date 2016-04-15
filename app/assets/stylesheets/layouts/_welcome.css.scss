@@ -5,6 +5,34 @@
   @include phone {
     @include show-grid(layout($susy-phone $susy-debug));
   }
+
+  .homepage-banner {
+    @include span(full);
+
+    @include phone {
+      padding: 6rem 0 6em 0;
+    }
+
+    background-image: image-url("banner6.jpg");
+    background-repeat: none;
+    padding: 6rem 0 15rem 0;
+    text-align: center;
+
+    &__description {
+      opacity: 0.8;
+      margin: 6em auto;
+      background-color: #2e2e2e;
+      padding: 1em 0;
+    }
+
+    &__name {
+      color: $white;
+    }
+
+    &__job {
+      color: $white;
+    }
+  }
 }
 
 .col-6, .col-2, .col-3{
