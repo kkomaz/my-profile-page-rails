@@ -24,8 +24,13 @@
       </p>
 
       <p>
-        I build websites and web applications using Ruby on Rails and various different frameworks such as Node.js.
+        I build websites and web applications using Ruby on Rails and various different frameworks such as React, Backbone, and Angular
       </p>
+
+      <p>
+        Who doesn't like css? :)
+      </p>
+
       <p>
       This website is dedicated to showing my readers what I have been working on as well as some cool blog posts that I find interesting and helpful.
       </p>
@@ -40,21 +45,21 @@
     </div>
   </div>
 
-  <div class="wrapper_2 wrapper_padding clearfix">
-    <div class="col-2 homepage_content">
+  <div class="user-content">
+    <div class="user-content__blog-posts">
       <h2>My Blog Posts</h2>
       <hr>
       <%= render partial: "welcome/post", collection: @posts, :as => "post" %>
       <%= link_to "My previous blog site", "https://kkomaz.wordpress.com/category/blogs/", :target => "_blank" %>
     </div>
 
-    <div class="col-3 homepage_content">
+    <div class="user-content__projects">
       <h2>My Projects</h2>
       <hr>
       <%= render partial: "welcome/projects", collection: @projects, :as => "project" %>
     </div>
 
-    <div class="col-3 homepage_content">
+    <div class="user-content__screencast">
       <h2>My Screencasts</h2>
       <hr>
       <% if !@videos.empty? %>

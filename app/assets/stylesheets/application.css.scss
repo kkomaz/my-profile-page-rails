@@ -109,12 +109,16 @@ p, ul, ol {
 }
 
 hr {
-    width: 3em;
-    display: block;
-    height: 2px;
-    border: 0;
-    border-top: 2px solid $highlight;
-    margin: 1em 0;
+  @include phone {
+    margin: 15px auto;
+  }
+  
+  width: 3em;
+  display: block;
+  height: 2px;
+  border: 0;
+  border-top: 2px solid $highlight;
+  margin: 1em 0;
 }
 
 #page_title {
