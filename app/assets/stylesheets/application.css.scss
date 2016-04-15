@@ -17,6 +17,7 @@
 
 // Layouts
 @import './layouts/header';
+@import './layouts/footer';
 @import './layouts/welcome';
 @import './layouts/post_projects';
 
@@ -112,7 +113,7 @@ hr {
   @include phone {
     margin: 15px auto;
   }
-  
+
   width: 3em;
   display: block;
   height: 2px;
@@ -129,26 +130,6 @@ hr {
   text-transform: uppercase;
 }
 
-#main_footer{
-  padding: 2.5em 5%;
-  border-top: 1px solid $border;
-  .copyright {
-    float: left;
-    font-size: .9em;
-    margin: 0;
-  }
-  nav {
-    float: right;
-    i {
-      color: $dark;
-      margin-left: 1em;
-      padding-top: .2em;
-      &:hover {
-        color: $highlight;
-      }
-    }
-  }
-}
 
 input[type="text"], input[type="email"], input[type="password"], textarea{
   width: 100%;
