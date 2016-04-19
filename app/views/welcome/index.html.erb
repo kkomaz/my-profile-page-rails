@@ -49,7 +49,11 @@
     <div class="user-content__blog-posts">
       <h2>My Blog Posts</h2>
       <hr>
-      <%= render partial: "welcome/post", collection: @posts, :as => "post" %>
+      <% if user_signed_in? %>
+        <%= render partial: "welcome/post", collection: @posts, :as => "post" %>
+      <% else %>
+        <%= render partial: "welcome/post", collection: @public_posts, :as => "post" %>
+      <% end %>
       <%= link_to "My previous blog site", "https://kkomaz.wordpress.com/category/blogs/", :target => "_blank" %>
     </div>
 

@@ -1,8 +1,9 @@
 class PostsController < ApplicationController
   before_action :find_post, :only => [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, :except => [:index, :show]
-  
+
   def index
+    @public_posts = Post.public_posts.order("created_at DESC").page(params[:page]).per(3)
     @posts = Post.order("created_at DESC").page(params[:page]).per(3)
   end
 
@@ -40,7 +41,7 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:title, :content, :slug, :image)
+    params.require(:post).permit(:title, :content, :slug, :image, :public)
   end
 
   def find_post
