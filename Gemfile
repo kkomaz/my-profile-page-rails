@@ -22,7 +22,6 @@ gem "compass-rails", github: "Compass/compass-rails", branch: "master"
 gem 'sass-globbing'
 gem 'sass'
 gem 'susy'
-gem 'breakpoint'
 
 group :development, :test do
   gem 'byebug'

@@ -63,9 +63,6 @@ GEM
       debug_inspector (>= 0.0.1)
     bootstrap-sass (3.1.1.1)
       sass (~> 3.2)
-    breakpoint (2.7.0)
-      sass (~> 3.3)
-      sassy-maps (< 1.0.0)
     builder (3.2.2)
     byebug (5.0.0)
       columnize (= 0.9.0)
@@ -273,8 +270,6 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (~> 1.1)
-    sassy-maps (0.4.0)
-      sass (~> 3.3)
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
@@ -333,7 +328,6 @@ DEPENDENCIES
   better_errors
   binding_of_caller
   bootstrap-sass (~> 3.1.1)
-  breakpoint
   byebug
   capybara
   coffee-rails (~> 4.1.0)
