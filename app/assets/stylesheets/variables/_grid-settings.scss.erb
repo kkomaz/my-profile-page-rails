@@ -1,7 +1,8 @@
 $column-check: <%= Rails.env.production? ? 'hide' : 'show-columns' %>;
 
 $susy: (
-  columns: 12
+  columns: 12,
+  column-width: 80px,
 );
 
 $susy-phone: (
@@ -11,7 +12,7 @@ $susy-phone: (
 $susy-debug: (
   debug: (
     image: $column-check,
-    color: rgba(153,255,153, 0.2),
+    color: rgba(#00f, .2),
     output: background
   )
 );

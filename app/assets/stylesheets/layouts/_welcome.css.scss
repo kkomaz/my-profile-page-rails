@@ -1,11 +1,4 @@
 .welcome-page {
-  @include show-grid(layout($susy $susy-debug));
-  @include container;
-
-  @include phone {
-    @include show-grid(layout($susy-phone $susy-debug));
-  }
-
   .homepage-banner {
     @include span(full);
 
@@ -35,7 +28,12 @@
   }
 
   .user-information {
-    @include span(full);
+    @include show-grid(layout($susy $susy-debug));
+    @include container;
+
+    @include phone {
+      @include show-grid(layout($susy-phone $susy-debug));
+    }
 
     border-bottom: 1px solid #E9E9E9;
     padding-bottom: 4em;
@@ -94,7 +92,13 @@
   }
 
   .user-content {
-    @include span(full);
+    @include show-grid(layout($susy $susy-debug));
+    @include container;
+
+    @include phone {
+      @include show-grid(layout($susy-phone $susy-debug));
+    }
+
     padding-bottom: 4em;
 
     h2 {

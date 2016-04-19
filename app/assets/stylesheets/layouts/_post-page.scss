@@ -1,4 +1,16 @@
 .post-page {
+  @include container;
+
+  @include with-layout($susy $susy-debug) {
+    @include show-grid;
+  }
+
+  @include phone {
+    @include with-layout($susy-phone $susy-debug) {
+      @include show-grid;
+    }
+  }
+
   header {
     text-align: center;
 
@@ -12,7 +24,7 @@
       }
 
       @include size(400px);
-      
+
       margin: 1em auto;
     }
   }
